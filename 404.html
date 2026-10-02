@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página no encontrada — SIRAME</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">
+      <img src="Img/logo.png" alt="Logo SIRAME" class="logo__img" onerror="this.style.display='none'">
+      <span class="logo__text">SIRAME</span>
+    </a>
+    <nav class="nav__links" aria-label="Navegación">
+      <a href="index.html" class="nav__link">← Volver al inicio</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="not-found">
+    <div class="not-found__photo">
+      <img src="Img/404-ilustracion.jpg" alt="Ilustración de página no encontrada" onerror="this.parentElement.classList.add('img-fallback')">
+    </div>
+    <p class="hero__eyebrow">Error 404</p>
+    <h1 class="section__title">Esta página no existe</h1>
+    <p class="section__subtitle">Puede que el enlace esté roto o que la página haya cambiado de dirección.</p>
+    <div class="not-found__actions">
+      <a href="index.html" class="btn btn--primary">Ir al inicio</a>
+      <a href="modulos.html" class="btn btn--ghost">Ver módulos</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="logo logo--footer">
+        <img src="Img/logo.png" alt="Logo SIRAME" class="logo__img" onerror="this.style.display='none'">
+        <span class="logo__text">SIRAME</span>
+      </a>
+      <p>Sistema de Inventario, Registro y Administración de Materiales y Equipos (Inframen).</p>
+    </div>
+  </div>
+  <p class="footer__legal">© 2026 SIRAME. Todos los derechos reservados.</p>
+</footer>
+
+<script src="JS/javascript.js"></script>
+</body>
+</html>

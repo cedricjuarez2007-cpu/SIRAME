@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El sistema — SIRAME</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">
+      <img src="Img/logo.png" alt="Logo SIRAME" class="logo__img" onerror="this.style.display='none'">
+      <span class="logo__text">SIRAME</span>
+    </a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="modulos.html" class="nav__link">Módulos</a>
+      <a href="roles.html" class="nav__link">Roles</a>
+      <a href="sistema.html" class="nav__link is-active">El sistema</a>
+      <a href="precios.html" class="nav__link">Precios</a>
+      <a href="acceso.html" class="btn-star btn-star--nav">Solicitar acceso</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav__mobile" id="navMobile" aria-label="Navegación móvil">
+    <a href="modulos.html">Módulos</a>
+    <a href="roles.html">Roles</a>
+    <a href="sistema.html">El sistema</a>
+    <a href="precios.html">Precios</a>
+    <a href="acceso.html" class="nav__cta">Solicitar acceso</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="access-hero">
+    <p class="hero__eyebrow">El sistema</p>
+    <h1 class="section__title">Un registro, ocho módulos, cero hojas de cálculo sueltas</h1>
+    <p class="access-hero__subtitle">SIRAME reemplaza los inventarios en Excel repartidos entre distintas personas por un solo sistema centralizado, con historial completo y permisos por rol.</p>
+  </section>
+
+  <!-- ARQUITECTURA -->
+  <section class="system-architecture">
+    <div class="system-architecture__grid">
+      <div class="system-architecture__photo"><img src="Img/sistema-dashboard.jpg" alt="Panel del sistema SIRAME mostrando el inventario" onerror="this.parentElement.classList.add('img-fallback')"></div>
+      <div class="system-architecture__copy">
+        <p class="section__eyebrow">Arquitectura</p>
+        <h2>Ocho modelos conectados entre sí</h2>
+        <p>Equipo es el centro del sistema: se relaciona con TipoEquipo (qué es), Ubicación (dónde está) y Usuario (quién lo gestiona). A partir de ahí, Traslado, Mantenimiento, Baja e Incidencia registran todo lo que le pasa al equipo a lo largo del tiempo.</p>
+        <p>Esto significa que, al consultar un equipo, se puede ver de un vistazo su ubicación actual, su historial de traslados, sus mantenimientos y cualquier incidencia reportada — sin cruzar archivos distintos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLUJO DE TRABAJO DETALLADO -->
+  <section class="steps">
+    <div class="section__head">
+      <p class="section__eyebrow">Flujo de trabajo</p>
+      <h2 class="section__title">Del alta al historial completo</h2>
+      <p class="section__subtitle">Así se mueve la información dentro del sistema, paso a paso.</p>
+    </div>
+    <div class="steps__grid steps__grid--four">
+      <article class="step-item">
+        <span class="step-item__number">01</span>
+        <h3>Alta de equipo</h3>
+        <p>Administración registra el equipo con tipo, número de serie y ubicación inicial.</p>
+      </article>
+      <article class="step-item">
+        <span class="step-item__number">02</span>
+        <h3>Asignación y uso</h3>
+        <p>El equipo queda visible para el Coordinador y los Profesores de esa ubicación.</p>
+      </article>
+      <article class="step-item">
+        <span class="step-item__number">03</span>
+        <h3>Traslados y reportes</h3>
+        <p>Coordinadores mueven equipo; Profesores reportan fallas cuando ocurren.</p>
+      </article>
+      <article class="step-item">
+        <span class="step-item__number">04</span>
+        <h3>Mantenimiento o baja</h3>
+        <p>Administración da mantenimiento o, si ya no es viable, autoriza la baja formal.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="modules">
+    <div class="section__head">
+      <p class="section__eyebrow">Beneficios</p>
+      <h2 class="section__title">Por qué un sistema centralizado</h2>
+    </div>
+    <div class="modules__grid modules__grid--three">
+      <article class="module-card"><span class="module-card__icon">📊</span><h3>Un solo registro</h3><p>Se acabó buscar el equipo en tres archivos de Excel distintos.</p></article>
+      <article class="module-card"><span class="module-card__icon">🔐</span><h3>Permisos claros</h3><p>Cada rol ve y edita exactamente lo que le corresponde.</p></article>
+      <article class="module-card"><span class="module-card__icon">🕓</span><h3>Historial completo</h3><p>Traslados, mantenimientos y bajas quedan documentados con fecha y responsable.</p></article>
+    </div>
+  </section>
+
+  <!-- STATS reutilizadas -->
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stat"><p class="stat__number" data-count="8">0</p><p class="stat__label">Modelos de datos conectados</p></div>
+      <div class="stat"><p class="stat__number" data-count="3">0</p><p class="stat__label">Roles con permisos propios</p></div>
+      <div class="stat"><p class="stat__number" data-count="1">0</p><p class="stat__label">Sistema para toda la institución</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-band">
+      <div class="cta-band__inner">
+        <h2>¿Listo para dejar atrás las hojas de cálculo sueltas?</h2>
+        <p>Solicitá acceso y empezá a centralizar el inventario de tu institución hoy mismo.</p>
+        <a href="acceso.html" class="btn-star btn-star--large btn-star--onred">Solicitar acceso</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="logo logo--footer">
+        <img src="Img/logo.png" alt="Logo SIRAME" class="logo__img" onerror="this.style.display='none'">
+        <span class="logo__text">SIRAME</span>
+      </a>
+      <p>Sistema de Inventario, Registro y Administración de Materiales y Equipos (Inframen).</p>
+    </div>
+    <div class="footer__links">
+      <a href="modulos.html">Módulos</a>
+      <a href="roles.html">Roles</a>
+      <a href="sistema.html">El sistema</a>
+      <a href="precios.html">Precios</a>
+      <a href="acceso.html">Solicitar acceso</a>
+    </div>
+  </div>
+  <p class="footer__legal">© 2026 SIRAME. Todos los derechos reservados.</p>
+</footer>
+
+<script src="JS/javascript.js"></script>
+</body>
+</html>
